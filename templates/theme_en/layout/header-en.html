@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} "/>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+<title>{{titel}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+<meta name="description" content="{{description}}">
+<meta name="keywords" content="{{keywords}}">
+<meta property="fb:page_id" content="677185012348838" />
+<meta name="alexaVerifyID" content="yCYD0lrksXDMvF2cG3GdOvpXUoU"/>
+<META NAME="Author" CONTENT="برو ويب ">
+<META HTTP-EQUIV="Window-target" CONTENT="_top">
+<META NAME="Date" CONTENT="{{last_updated}}">
+<META NAME="Copyright" CONTENT="جميع الحقوق محفوظة © لصالح برو ويب  2016">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<html itemscope itemtype="http://schema.org/LocalBusiness">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="wot-verification" content="525659367fc6fe7a2423"/>
+<meta name="yandex-verification" content="a67562d81447f601" />
+
+  <!-- The Open Graph protocol-->
+        <meta property="og:site_name" content="IMDb" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:title" content="The Rock" />
+        <meta property="og:description" content="histicated British agent, James Bond." />
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+          <!--favicon-->
+
+  <link rel="icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon">
+
+
+
+  </head>
+<body>
+
+<header> 
+  <div class="button-17">
+  
+    <p><a href="https://proallweb.com/en/">English</a></p>
+
+  </div> 
+ 
+
+  <div class="button-17">
+  
+   
+    <p><a href="https://proallweb.com/">عربى</a></p>
+  </div> 
+
+
+
+    
+<div class="container">
+      
+        </br>
+            <section class="taha_social-2">
+<a href="https://www.facebook.com/proallweb" class="fa fa-facebook"></a>
+<a href="https://twitter.com/proallweb" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/company/pro-all-web-solutions" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UCrczODzx7kL7O0O5vUmE9KA" class="fa fa-youtube"></a>
+
+</section>
+
+
+<section id="taha_social">
+<div id="taha">
+  
+ <img src="https://proallweb.com/media/{{imglogos}}" alt="برو ويب سوليوشنز | مستشارى خدمات المواقع" />
+            </br >
+   <h1 class="rotate-scale-up">Pro web solutions</h1>
+                        
+                </section>
+
+  <section id="taha_menu" style="padding-bottom: 42px;">
+                <div id="cssmenu">
+                  {% block sidenav %}
+{% for page in page_list %}
+<nav>
+  <ul>
+    <li><a href="{{ page.permalink }}"> {{page.titel}}</a></li>
+
+  </ul>
+       </nav>
+{% endfor %}
+                 
+
+                  {% endblock sidenav %}
+                        
+                
+                                     
+                </div>
+               
+        
+            </section>
+               </div>
+
+</header>

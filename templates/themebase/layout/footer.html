@@ -1,0 +1,98 @@
+{% load static %}
+<footer>
+     
+    <section id="footer_box">
+    
+    <div class="box_footer">
+     
+    
+     {% for page in title_footer %}
+            
+            <h4>{{ page.title_footer }}</h4>
+            <ul class="footer_list">
+             <li><a href="{{page.title_footer_li_link}}" >{{page.title_footer_h4}}</a></li>
+             
+             </ul>
+     {% endfor %}
+            
+    </div>
+     <div class="box_footer">
+        {% for page in title_footer2 %}
+            
+        <h4>{{ page.title_footer }}</h4>
+        <ul class="footer_list">
+         <li><a href="{{page.title_footer_li_link}}" >{{page.title_footer_h4}}</a></li>
+         
+         </ul>
+ {% endfor %}
+          
+     </div>
+    
+    <div class="box_footer">
+        {% for page in title_footer3 %}
+            
+        <h4>{{ page.title_footer }}</h4>
+        <ul class="footer_list">
+         <li><a href="{{page.title_footer_li_link}}" >{{page.title_footer_h4}}</a></li>
+         
+         </ul>
+ {% endfor %}
+    
+    </div>
+    
+    </section>
+    <section style="width: min-content;">
+        <a href="{{Socia_facebook}}" class="fa fa-facebook"></a>
+        <a href="{{socail_twitter}}" class="fa fa-twitter"></a>
+        <a href="{{socail_linkedin}}" class="fa fa-linkedin"></a>
+        <a href="{{socail_youtube}}" class="fa fa-youtube"></a>
+    
+    </section>
+    
+    <section>
+    </br>
+   
+    
+                <div class="paypal">
+    <input type="image" src="{% static '/img/layout/paypal_mc_visa_amex_disc_210x80.gif'%}" alt="PayPal">
+                </div>
+    
+                <div class="box_footer-img">
+                    {% load static %}
+                        <img src="/media/{{imglogos}}" alt="برو ويب سوليوشنز"  />
+                    
+                    </div>
+    </section>
+    
+    
+    <section class="bottom-footer">
+            <div class="container footer-bottom">
+            <div class="row">
+            <div class="link-list span6">
+            <a href="./{{permalink}}">سياسة الاستخدام</a>
+            <a href="./{{permalink}}">سياسة الخصوصية</a>
+            <a href="./{{permalink}}">الأسئلة الشائعة</a>
+            
+            </div></div></div>
+            </section>
+    
+    <section id="footer_copyright">
+    
+    <div id="footer_copyright_1">
+    
+        <h6 class="copywrite">جميع الحقوق محفوظة &copy; لصالح <a href="https://proallweb.com/"> برو ويب</a>  2016</h6>
+        <h6 class="copywrite">  <img src="{% static '/img/python-22.png'%}" style="width: 136px;margin-bottom: -20px;" alt="بايثون برو ويب سوليوشنز"  /> مدعوم من  بايثون<a href="https://www.djangoproject.com/"> جانغو</a>  2022  </h6>
+        
+    </div>
+    
+    <a href="https://proallweb.com/"> </a>
+    </section>
+    </footer>
+    
+    </body>
+    
+   
+    
+    </html>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4618370383852973"
+     crossorigin="anonymous"></script>

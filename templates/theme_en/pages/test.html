@@ -1,0 +1,15 @@
+{% extends 'theme_en/base-en.html'%}
+
+{%block content %}
+<br>
+<form method="POST">
+ {% csrf_token %}
+{{lf}}
+
+<input type="submit" value="save">
+
+</form>
+
+
+
+{% endblock content %}
